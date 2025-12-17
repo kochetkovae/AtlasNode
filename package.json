@@ -1,0 +1,42 @@
+{
+  "name": "atlas-node",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "AtlasNode – lightweight TypeScript/Vite project with Coinbase ecosystem integrations.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -p tsconfig.json && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@coinbase/onchainkit": "^1.1.0",
+    "@coinbase/node": "^0.6.0",
+    "@coinbase/x402": "^2.0.0",
+    "@coinbase/cdp-sdk": "^1.1.1",
+    "viem": "^2.21.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "vite": "^5.0.8"
+  },
+  "dependencyDescriptions": {
+    "@coinbase/onchainkit": {
+      "repo": "coinbase/onchainkit",
+      "why": "Набор утилит и UI-хелперов для Base-first ончейн приложений."
+    },
+    "@coinbase/node": {
+      "repo": "coinbase/node",
+      "why": "Node.js SDK для взаимодействия с сервисами Coinbase и инфраструктурой."
+    },
+    "@coinbase/x402": {
+      "repo": "coinbase/x402",
+      "why": "HTTP-native x402 payment flow для платных API и gated endpoints."
+    },
+    "@coinbase/cdp-sdk": {
+      "repo": "coinbase/cdp-sdk",
+      "why": "SDK для работы с Coinbase Developer Platform (проекты, ключи, метаданные)."
+    }
+  }
+}
